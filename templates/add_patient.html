@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Patient</title>
+</head>
+<body>
+    <h1>Add a New Patient</h1>
+    <!-- Form to submit new patient details -->
+    <form method="POST">
+        First Name: <input type="text" name="first_name"><br>
+        Last Name: <input type="text" name="last_name"><br>
+        Date of Birth: <input type="date" name="date_of_birth"><br>
+        <button type="submit">Add Patient</button>
+    </form>
+    <!-- Link to return to the patient list -->
+    <a href="{{ url_for('index') }}">Back to Patient List</a>
+</body>
+</html>
